@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Joke Generator</title>
+    <link rel="stylesheet" href="../stylesheet/styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="../html/jokes.html">Jokes</a></li>
+    </ul>
+</nav>
+
+<section id="jokes">
+    <h1>Automotive Joke Generator</h1>
+    <button onclick="generateJoke()">Generate Joke</button>
+    <p id="joke"></p>
+</section>
+
+<script>
+    function generateJoke() {
+        const jokes = [
+            "Why did the car break up with the garage? Because it found a new place to park!",
+            "What do you call a car that never stops? A car-azy ride!",
+            "Why do muscle cars never get lost? Because they always follow the road to power!",
+            "Why did the mechanic sleep under the car? He wanted to get a little muffler rest!"
+        ];
+        const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+        document.getElementById("joke").innerText = randomJoke;
+    }
+</script>
+
+<footer>
+    <a href="#top">Back to Top</a>
+</footer>
+
+</body>
+</html>
